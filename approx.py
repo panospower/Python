@@ -13,12 +13,16 @@ def taylor():
         i+=1
     print(sum(lis))
 
+def limit():
+    x=int(input("What value?:"))
+    print((1+1/x)**x)
+
 if ans == 0:
     pass
 if ans == 3:
-    e_ans=int(input("Which way?(1 for taylor series, 2 for series approximation):"))
+    e_ans=int(input("Which way?(1 for taylor series, 2 for limit approximation):"))
     if e_ans == 1:
         taylor()
     if e_ans == 2:
-        pass
+        limit()
     pass
