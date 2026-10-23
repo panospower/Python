@@ -17,8 +17,20 @@ def limit():
     x=int(input("What value?:"))
     print((1+1/x)**x)
 
+def generate_sequence():
+    lis=[1,2]
+    a=int(input("How many terms of the fib sequence:"))
+    i=0
+    while i < a:
+        num=lis[-1]+lis[-2]
+        lis.append(num)
+        i+=1
+    print(lis[-1]/lis[-2])
+
 if ans == 0:
     pass
+if ans == 2:
+    generate_sequence()
 if ans == 3:
     e_ans=int(input("Which way?(1 for taylor series, 2 for limit approximation):"))
     if e_ans == 1:
