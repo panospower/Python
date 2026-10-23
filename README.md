@@ -6,7 +6,7 @@ A small collection of Python experiments focused on mathematics, probability, an
 
 | File | Description |
 | --- | --- |
-| [`approx.py`](approx.py) | An interactive menu for mathematical approximations.Added Euler's number (e) and the golden ratio(φ).Both accompanied with their own calculation methods. Work in progress |
+| [`approx.py`](approx.py) | An interactive menu for mathematical approximations.Added Pi(π) Euler's number (e) and the golden ratio(φ).All accompanied with their own calculation methods. Work in progress |
 | [`biology.py`](biology.py) | Simulates repeated random selections across a user-defined number of categories. It prints the counts and percentages, compares the results with the expected uniform percentage, and calculates a simple deviation-based accuracy score. |
 | [`shi.py`](shi.py) | Contains experimental functions for estimating **e** with a Taylor series and counting the digits in a hard-coded decimal number. The functions are defined but are not called automatically when the file runs. |
 
