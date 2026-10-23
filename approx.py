@@ -19,7 +19,7 @@ def limit():
 
 def generate_sequence():
     lis=[1,2]
-    a=int(input("How many terms of the fib sequence:"))
+    a=int(input("How many terms of the fib sequence(starts with lis=[1,2]):"))
     i=0
     while i < a:
         num=lis[-1]+lis[-2]
@@ -27,12 +27,26 @@ def generate_sequence():
         i+=1
     print(lis[-1]/lis[-2])
 
+
+def Leibniz():
+    lis=[]
+    a = int(input("How many terms?:"))
+    i=0
+    while i < a:
+        lis.append(4*((-1)**i)/(2*i+1))
+        i+=1
+    print(sum(lis))
+
 if ans == 0:
     pass
+if ans == 1:
+    pi_ans=int(input("What method?(1 for Leibniz Formula(lowk sucks)):"))
+    if pi_ans == 1:
+        Leibniz()
 if ans == 2:
     generate_sequence()
 if ans == 3:
-    e_ans=int(input("Which way?(1 for taylor series, 2 for limit approximation):"))
+    e_ans=int(input("Which method?(1 for taylor series, 2 for limit approximation):"))
     if e_ans == 1:
         taylor()
     if e_ans == 2:
